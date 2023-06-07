@@ -36,19 +36,4 @@ navbar.classList.remove("active");
 };
 
 
-//carosel
-const carouselInner = document.querySelector('.home=img-add');
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
-
-let position = 0;
-
-nextButton.addEventListener('click', () => {
-  position -= 300; // Move para a próxima imagem
-  carouselInner.style.transform = `translateX(${position}px)`;
-});
-
-prevButton.addEventListener('click', () => {
-  position += 300; // Move para a imagem anterior
-  carouselInner.style.transform = `translateX(${position}px)`;
-});
+//fazer as animações dos itens
