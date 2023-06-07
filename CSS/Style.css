@@ -12,23 +12,26 @@
 }
 
 /* black theme */
-:root {
+.dark {
     --nav-cor: #1a1e24;
     --bg-cor: #1f242d;
     --bg-cor-2: #2b303a;
+    --titulo-cor:#dd2e2e;
+
     --text-cor: #fff;
     --text2-cor: #963d3d;
     --main-cor: #0ef;
 }
 
-/* white theme
+/* white theme */
 :root {
     --nav-cor: #b3cef7;
-    --bg-cor: #ffffff;
-    --bg-cor-2: #eaeef5;
+    --titulo-cor:#dd2e2e;
+    --bg-cor: #fff;
+    --bg-cor-2: #fff;
     --text-cor: #000000;
     --main-cor: rgb(127, 196, 201);
-} */
+}
 
 html {
     font-size: 62.5%;
@@ -49,8 +52,8 @@ body {
 }
 
 section {
-    min-height: 100vh;
-    padding: 10rem;
+    min-height: 80vh;
+    padding: 10rem 10rem 8rem;
 }
 
 
@@ -61,7 +64,7 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 1rem 9%;
     background: var(--nav-cor);
     display: flex;
     justify-content: space-between;
@@ -69,12 +72,15 @@ section {
     z-index: 100;
 }
 
-.logo {
-    font-size: 2.5rem;
+.logo img{
+    /* font-size: 2.5rem; */
     color: var(--text-cor);
     font-weight: 600;
     cursor: default;
+    width: 8rem;
 }
+
+
 
 .navbar a {
     font-size: 1.7rem;
@@ -101,16 +107,12 @@ section {
 }
 
 .home-img img {
-    width: 35vw;
+    width: 37vw;
+    border-radius: 25px;
+    margin-left: 2rem;
+    box-shadow: 11px 10px 40px gray;
+    
 }
-
-.home-img {
-    overflow: hidden;
-}
-
-
-
-
 
 
 .home-conteudo h3 {
@@ -118,10 +120,23 @@ section {
     font-weight: 700;
 }
 
+#titulo{
+color: var(--titulo-cor);
+}
+
+.home-conteudo h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
 span {
     color: var(--main-cor);
 }
 
+.home-conteudo {  
+    padding-right: 18rem;
+
+}
 .home-conteudo h1 {
     font-size: 5.6rem;
     font-weight: 700;
@@ -131,6 +146,8 @@ span {
 
 .home-conteudo p {
     font-size: 1.6rem;
+    text-align: justify;
+   
 }
 
 .media a {
@@ -188,6 +205,8 @@ span {
 
 .sobre-img img {
     width: 35vw;
+    box-shadow: -6px 6px 40px gray;
+    border-radius: 20px;
 }
 
 .titulo {
@@ -208,9 +227,15 @@ span {
 .sobre-conteudo p {
     font-size: 2.6rem;
     margin: 2rem 0 3rem;
+    text-align: justify;
+    
 }
 
 /* Cursos */
+
+.cursos {
+    padding-top: 2rem;
+}
 
 .cursos h2 {
     margin-bottom: 5rem;
@@ -225,18 +250,19 @@ span {
 }
 
 .cursos-conteudo .cursos-box {
-    flex: 1 1 30rem;
+    flex: 1 1 50rem;
     background: var(--bg-cor-2);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
     border: .2rem solid var(--bg-cor);
     transition: transform .5s ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .cursos-conteudo .cursos-box:hover {
     border-color: var(--main-cor);
-    transform:  scale(1.02);
+    transform: scale(1.02);
     cursor: pointer;
 }
 
@@ -251,7 +277,7 @@ span {
 
 .cursos-box h4 {
     font-size: 2.5rem;
-    gap: 3rem;
+    /* gap: 3rem; */
     padding: 2rem;
     color: var(--text2-cor)
 }
@@ -262,3 +288,104 @@ span {
 }
 
 
+
+
+/* Projetos */
+
+
+.projetos-conteudo h2 {
+    font-size: 4rem;
+    text-align: left;
+    text-align: center;
+    line-height: 3.2;
+    color: var(--nav-cor);
+}
+
+
+
+
+/* Footer */
+
+.footer {
+  
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--nav-cor);
+}
+
+.footer p {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-cor);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: .1rem solid rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    section {
+        padding: 5rem 2% 0;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home-conteudo h3 {
+        font-size: 2.6rem;
+    } 
+
+     .home-conteudo h1 {
+        font-size: 5rem;
+    } 
+
+    .home-conteudo {
+        text-align: center;
+        padding-right: 0;
+        padding-top: 7rem;
+    }
+
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+    .sobre {
+        flex-direction: column-reverse;
+    }
+
+    .sobre-img {
+
+        margin-top: 4rem;
+    }
+
+    .sobre-img img {
+        width: 73vw;
+    }
+
+}
