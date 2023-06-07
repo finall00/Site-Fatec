@@ -52,5 +52,3 @@ prevButton.addEventListener('click', () => {
   position += 300; // Move para a imagem anterior
   carouselInner.style.transform = `translateX(${position}px)`;
 });
-
-teste
