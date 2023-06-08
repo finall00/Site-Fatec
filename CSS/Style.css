@@ -16,7 +16,7 @@
     --nav-cor: #1a1e24;
     --bg-cor: #1f242d;
     --bg-cor-2: #2b303a;
-    --titulo-cor:#dd2e2e;
+    --titulo-cor: #dd2e2e;
 
     --text-cor: #fff;
     --text2-cor: #963d3d;
@@ -26,16 +26,15 @@
 /* white theme */
 :root {
     --nav-cor: #b3cef7;
-    --titulo-cor:#dd2e2e;
+    --titulo-cor: #dd2e2e;
     --bg-cor: #fff;
-    --bg-cor-2: #fff;
+    --bg-cor-2: #f5e2e2;
     --text-cor: #000000;
     --main-cor: rgb(127, 196, 201);
 }
 
 html {
     font-size: 62.5%;
-
 }
 
 ::-webkit-scrollbar {
@@ -53,6 +52,7 @@ body {
 
 section {
     min-height: 80vh;
+
     padding: 10rem 10rem 8rem;
 }
 
@@ -72,7 +72,7 @@ section {
     z-index: 100;
 }
 
-.logo img{
+.logo img {
     /* font-size: 2.5rem; */
     color: var(--text-cor);
     font-weight: 600;
@@ -111,7 +111,7 @@ section {
     border-radius: 25px;
     margin-left: 2rem;
     box-shadow: 11px 10px 40px gray;
-    
+
 }
 
 
@@ -120,8 +120,8 @@ section {
     font-weight: 700;
 }
 
-#titulo{
-color: var(--titulo-cor);
+#titulo {
+    color: var(--titulo-cor);
 }
 
 .home-conteudo h2 {
@@ -133,10 +133,11 @@ span {
     color: var(--main-cor);
 }
 
-.home-conteudo {  
+.home-conteudo {
     padding-right: 18rem;
 
 }
+
 .home-conteudo h1 {
     font-size: 5.6rem;
     font-weight: 700;
@@ -147,7 +148,7 @@ span {
 .home-conteudo p {
     font-size: 1.6rem;
     text-align: justify;
-   
+
 }
 
 .media a {
@@ -228,17 +229,20 @@ span {
     font-size: 2.6rem;
     margin: 2rem 0 3rem;
     text-align: justify;
-    
+
 }
 
 /* Cursos */
 
 .cursos {
     padding-top: 2rem;
+    background: var(--bg-cor-2);
+
 }
 
 .cursos h2 {
     margin-bottom: 5rem;
+    margin-top: 10rem;
 }
 
 .cursos-conteudo {
@@ -251,14 +255,17 @@ span {
 
 .cursos-conteudo .cursos-box {
     flex: 1 1 50rem;
-    background: var(--bg-cor-2);
+    background: var(--bg-cor);
+    min-height: 42rem;
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
-    border: .2rem solid var(--bg-cor);
+    border: .2rem solid var(--bg-cor-2);
     transition: transform .5s ease;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgb(0 0 0 / 29%) 3px 8px 10px;
+
 }
+
 
 .cursos-conteudo .cursos-box:hover {
     border-color: var(--main-cor);
@@ -287,7 +294,10 @@ span {
     margin: 1rem 0 3rem;
 }
 
-
+.cursos-box:nth-child(3) p,
+.cursos-box:nth-child(4) p {
+    padding-top: 6rem;
+}
 
 
 /* Projetos */
@@ -301,13 +311,22 @@ span {
     color: var(--nav-cor);
 }
 
+.projetos-img {
+    display: flex;
+}
+
+.projetos-img img {
+    width: 48rem;
+    padding: 2rem;
+}
+
 
 
 
 /* Footer */
 
 .footer {
-  
+
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
@@ -358,11 +377,11 @@ span {
 
     .home-conteudo h3 {
         font-size: 2.6rem;
-    } 
+    }
 
-     .home-conteudo h1 {
+    .home-conteudo h1 {
         font-size: 5rem;
-    } 
+    }
 
     .home-conteudo {
         text-align: center;

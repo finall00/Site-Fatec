@@ -12,7 +12,7 @@ let navLinks = document.querySelectorAll("header nav a");
 window.onscroll = () => {
   sections.forEach((sec) => {
     let top = window.scrollY;
-    let offset = sec.offsetTop - 150;
+    let offset = sec.offsetTop - 200;
     let height = sec.offsetHeight;
     let id = sec.getAttribute("id");
 
@@ -37,3 +37,18 @@ navbar.classList.remove("active");
 
 
 //fazer as animações dos itens
+
+
+
+
+ScrollReveal({
+  reset: true,
+  distance: '80px',
+  duration: 1500,
+  delay: 200
+})
+
+ScrollReveal().reveal('.home-conteudo, .heading', {origin: 'top'});
+ScrollReveal().reveal('.home-img img, .cursos-conteudo, .curos-box', {origin: 'bottom'});
+ScrollReveal().reveal('.home-conteudo h1, .sobre-img', {origin: 'left'});
+ScrollReveal().reveal('.home-conteudo p, .sobre-conteudo', {origin: 'right'});
