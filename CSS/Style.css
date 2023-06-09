@@ -202,6 +202,7 @@ span {
     align-items: center;
     gap: 2rem;
     background: var(--bg-cor-2);
+    flex-direction: row-reverse;
 }
 
 .sobre-img img {
@@ -228,8 +229,14 @@ span {
 .sobre-conteudo p {
     font-size: 2.6rem;
     margin: 2rem 0 3rem;
-    text-align: justify;
+    text-align: left;
 
+}
+
+.sobre-conteudo .btn {
+    display: block;
+    width: 18%;
+    margin-top: 2rem;
 }
 
 /* Cursos */
@@ -286,7 +293,7 @@ span {
     font-size: 2.5rem;
     /* gap: 3rem; */
     padding: 2rem;
-    color: var(--text2-cor)
+    color: var(--titulo-cor)
 }
 
 .cursos-box p {
@@ -300,24 +307,53 @@ span {
 }
 
 
-/* Projetos */
+/* campus */
 
-
-.projetos-conteudo h2 {
+.campus{
+    padding: 4rem 3rem 4rem;
+}
+.campus h2 {
     font-size: 4rem;
     text-align: left;
     text-align: center;
     line-height: 3.2;
     color: var(--nav-cor);
+     margin-bottom: 5rem;
+    margin-top: 10rem;  
 }
 
-.projetos-img {
+
+.campus-conteudo {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
-.projetos-img img {
-    width: 48rem;
+.campus-conteudo .campus-box {
+    flex: 0 0 45rem;
+    background: var(--bg-cor-2);
+    min-height: 36rem;
+    padding: 2rem 1rem 0rem;
+    border-radius: 2rem;
+    
+
+}
+
+.campus-conteudo img{
+    width: 50rem;
+    border-radius: 11px;
+    box-shadow: rgb(0 0 0 / 29%) 3px 8px 10px;
+}
+
+.campus-box h4 {
+    font-size: 2.5rem;
+    /* gap: 3rem; */
     padding: 2rem;
+    color: var(--text2-cor);
+    font-size: 32px;
+    text-align: left;
 }
 
 
