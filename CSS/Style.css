@@ -78,6 +78,7 @@ section {
     font-weight: 600;
     cursor: default;
     width: 8rem;
+    cursor: pointer;
 }
 
 
@@ -209,6 +210,7 @@ span {
     width: 35vw;
     box-shadow: -6px 6px 40px gray;
     border-radius: 20px;
+    margin-top: -21rem;
 }
 
 .titulo {
