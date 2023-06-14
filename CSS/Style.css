@@ -31,6 +31,10 @@
     --bg-cor-2: #f5e2e2;
     --text-cor: #000000;
     --main-cor: rgb(127, 196, 201);
+    --agro: #3bc519;
+    --si: #3bc519;
+    --ads: #3bc519;
+    --gestao: #3bc519;
 }
 
 html {
@@ -98,11 +102,37 @@ section {
     display: none;
 }
 
+/* cabecalho */
+.titulo {
+    text-align: center;
+    font-size: 6.5rem;
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-cor);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    box-shadow: 0 0 0.5rem var(--main-cor);
+    color: var(--bg-cor-2);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+
+.btn:hover {
+    box-shadow: 0 0 1rem var(--main-cor);
+}
+
 /* Home */
 .home {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgb(240, 236, 236);
 }
 
 
@@ -111,7 +141,7 @@ section {
     font-weight: 700;
 }
 
-.home-conteudo #midia{
+.home-conteudo #midia {
     margin-top: 8rem;
 }
 
@@ -129,7 +159,6 @@ span {
 }
 
 .home-conteudo {
-
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -170,25 +199,21 @@ span {
     box-shadow: 0 0 1rem var(--main-cor);
 }
 
-.btn {
-    display: inline-block;
-    padding: 1rem 2.8rem;
-    background: var(--main-cor);
-    border-radius: 4rem;
-    font-size: 1.6rem;
-    box-shadow: 0 0 0.5rem var(--main-cor);
-    color: var(--bg-cor-2);
-    letter-spacing: .1rem;
-    font-weight: 600;
-    transition: .5s ease;
 
+.home .btn{
+    padding: 2rem 3.8rem;
+    margin-top: 8rem;
 }
 
-
-.btn:hover {
-    box-shadow: 0 0 1rem var(--main-cor);
-}
-
+.home .btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .home .btn:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
 
 /*---- Sobre ---- */
 
@@ -198,7 +223,6 @@ span {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: var(--bg-cor-2);
     flex-direction: row-reverse;
 }
 
@@ -209,11 +233,7 @@ span {
     margin-top: -17rem;
 }
 
-.titulo {
-    text-align: center;
-    font-size: 4.5rem;
 
-}
 
 .sobre-conteudo h2 {
     text-align: left;
@@ -233,7 +253,7 @@ span {
 
 .sobre-conteudo .btn {
     display: block;
-    width: 18%;
+    width: 15rem;
     margin-top: 2rem;
 }
 
@@ -241,7 +261,6 @@ span {
 
 .cursos {
     padding-top: 2rem;
-    background: var(--bg-cor-2);
 
 }
 
@@ -262,13 +281,14 @@ span {
     flex: 1 1 50rem;
     background: var(--bg-cor);
     min-height: 42rem;
+    max-height: 74rem;
+    max-width: 59rem;
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
     border: .2rem solid var(--bg-cor-2);
-    transition: transform ease 5s;
+    transition: transform ease 2s;
     box-shadow: rgb(0 0 0 / 29%) 3px 8px 10px;
-
 }
 
 
@@ -278,10 +298,33 @@ span {
     cursor: pointer;
 }
 
+
+.cursos-conteudo .btn:hover {
+    box-shadow: 0 0 1rem var(--main-cor);
+  }
+  
+  
+
+
 .cursos-box i {
     font-size: 7rem;
-    color: var(--main-cor);
+    
 }
+
+ .cursos-box  #agro {
+    color:  green;
+} 
+.cursos-box  #si {
+    color: var(--si);
+}
+.cursos-box  #ads {
+    color: var(--ads);
+}
+.cursos-box  #gestao {
+    color: var(--gestao);
+}
+
+
 
 .cursos-box h3 {
     font-size: 3rem;
@@ -295,14 +338,19 @@ span {
 }
 
 .cursos-box p {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin: 1rem 0 3rem;
     font-weight: 100;
 }
 
-.cursos-box:nth-child(3) p,
+
+.cursos-box:nth-child(3) p {
+    padding-top: 3.2rem;
+}
+
 .cursos-box:nth-child(4) p {
-    padding-top: 5rem;
+    /* padding-top: 3.5rem; */
+    padding-top: 1rem;
 }
 
 
@@ -313,7 +361,7 @@ span {
 }
 
 .campus h2 {
-    font-size: 4rem;
+    font-size: 6.5rem;
     text-align: left;
     text-align: center;
     line-height: 3.2;
@@ -340,6 +388,7 @@ span {
 
 .campus-conteudo img {
     width: 50rem;
+    height: 30rem;
     border-radius: 11px;
     box-shadow: rgb(0 0 0 / 29%) 3px 8px 10px;
 }
@@ -362,17 +411,37 @@ span {
 
 /* Footer */
 
-.footer {
-
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 2rem 9%;
-    background: var(--nav-cor);
+footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: var(--nav-cor);
+    padding: 0 8.0rem;
 }
 
-.footer p {
-    font-size: 1.6rem;
-    text-align: center;
+footer .footer-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.2rem 0;
+}
+
+footer .footer-conteudo a {
+    font-weight: 500;
+    font-size: 3.2rem;
+    color: var(--text-cor);
+    transition: color 0.3s ease;
+}
+
+footer .footer-conteudo a :hover {
+    color: var(--main-cor);
+
+}
+
+footer .footer-conteudo span {
+    color: var(--text-cor);
+    font-weight: 500;
+    font-size: 1.8rem;
 }
 
 

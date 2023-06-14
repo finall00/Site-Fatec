@@ -48,7 +48,6 @@ ScrollReveal({
   delay: 200
 })
 
-ScrollReveal().reveal('.home-conteudo, .heading, .campus h2', {origin: 'top'});
-ScrollReveal().reveal('.home-img img, .cursos-conteudo, .cursos-box, .campus-box, .campus-conteudo img, .campus-conteudo h4', {origin: 'bottom'});
-ScrollReveal().reveal('.home-conteudo h1, .sobre-conteudo', {origin: 'left'});
-ScrollReveal().reveal('.home-conteudo p, .sobre-img', {origin: 'right'});
+ScrollReveal().reveal('.home-conteudo, .heading, .campus h2, .sobre-conteudo', {origin: 'top'});
+ScrollReveal().reveal(' .cursos-conteudo,  .campus-box, .campus-conteudo img, .campus-conteudo h4', {origin: 'bottom'});
+ScrollReveal().reveal(' .sobre-img', {origin: 'right'});
