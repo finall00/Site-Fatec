@@ -17,7 +17,6 @@
     --bg-cor: #1f242d;
     --bg-cor-2: #2b303a;
     --titulo-cor: #dd2e2e;
-
     --text-cor: #fff;
     --text2-cor: #963d3d;
     --main-cor: #0ef;
@@ -25,16 +24,19 @@
 
 /* white theme */
 :root {
-    --nav-cor: #b3cef7;
+    --nav-cor: #3f51b5;
     --titulo-cor: #dd2e2e;
+    --nav-hover: #C0C0C0;
     --bg-cor: #fff;
+    --btn: #3f51b5;
     --bg-cor-2: #f5e2e2;
     --text-cor: #000000;
-    --main-cor: rgb(127, 196, 201);
+    --main-cor: #000000;
     --agro: #3bc519;
     --si: #3bc519;
     --ads: #3bc519;
     --gestao: #3bc519;
+    --navText-cor: #fff;
 }
 
 html {
@@ -87,13 +89,13 @@ section {
 
 .navbar a {
     font-size: 1.7rem;
-    color: var(--text-cor);
+    color: var(--navText-cor);
     margin-left: 4rem;
 }
 
 .navbar a:hover,
 .navbar a.active {
-    color: var(--main-cor);
+    color: 	var(--nav-hover);
 }
 
 #menu-icon {
@@ -112,7 +114,7 @@ section {
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
-    background: var(--main-cor);
+    background: var(--btn);
     border-radius: 4rem;
     font-size: 1.6rem;
     box-shadow: 0 0 0.5rem var(--main-cor);
@@ -145,9 +147,6 @@ section {
     margin-top: 8rem;
 }
 
-#titulo {
-    color: var(--titulo-cor);
-}
 
 .home-conteudo h2 {
     font-size: 3rem;
@@ -194,8 +193,8 @@ span {
 
 
 .media a:hover {
-    background: var(--main-cor);
-    color: var(--segundo-bg-cor);
+    background: var(--nav-cor);
+    color: var(--navText-cor);
     box-shadow: 0 0 1rem var(--main-cor);
 }
 
@@ -308,22 +307,8 @@ span {
 
 .cursos-box i {
     font-size: 7rem;
-    
+    color: var(--nav-cor);
 }
-
- .cursos-box  #agro {
-    color:  green;
-} 
-.cursos-box  #si {
-    color: var(--si);
-}
-.cursos-box  #ads {
-    color: var(--ads);
-}
-.cursos-box  #gestao {
-    color: var(--gestao);
-}
-
 
 
 .cursos-box h3 {
@@ -334,7 +319,7 @@ span {
     font-size: 2.5rem;
     /* gap: 3rem; */
     padding: 2rem;
-    color: var(--titulo-cor)
+    color: #363636;
 }
 
 .cursos-box p {
@@ -415,7 +400,7 @@ footer {
     width: 100%;
     position: relative;
     height: auto;
-    background-color: var(--nav-cor);
+    background-color: #FDF5E6;
     padding: 0 8.0rem;
 }
 
@@ -452,6 +437,7 @@ footer .footer-conteudo span {
     }
 
     .navbar {
+
         position: absolute;
         top: 100%;
         left: 0;
@@ -461,6 +447,10 @@ footer .footer-conteudo span {
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: .1rem solid rgba(0, 0, 0, .2);
         display: none;
+    }
+
+    .navbar a {
+        color: var(--text-cor);
     }
 
     .navbar.active {
