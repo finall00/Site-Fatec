@@ -27,6 +27,7 @@
     --nav-cor: #3f51b5;
     --titulo-cor: #dd2e2e;
     --nav-hover: #C0C0C0;
+    --footer-hover: #525151;
     --bg-cor: #fff;
     --btn: #3f51b5;
     --bg-cor-2: #f5e2e2;
@@ -56,7 +57,7 @@ body {
 }
 
 section {
-    min-height: 80vh;
+    min-height: 100vh;
     padding: 10rem 10rem 8rem;
 }
 
@@ -176,7 +177,7 @@ span {
     max-width: 63%;
 }
 
-.media a {
+.midia a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -192,7 +193,7 @@ span {
 }
 
 
-.media a:hover {
+.midia a:hover {
     background: var(--nav-cor);
     color: var(--navText-cor);
     box-shadow: 0 0 1rem var(--main-cor);
@@ -400,7 +401,7 @@ footer {
     width: 100%;
     position: relative;
     height: auto;
-    background-color: #FDF5E6;
+    background-color: #e0dfdd;
     padding: 0 8.0rem;
 }
 
@@ -419,7 +420,7 @@ footer .footer-conteudo a {
 }
 
 footer .footer-conteudo a :hover {
-    color: var(--main-cor);
+    color: var(--footer-hover);
 
 }
 

@@ -48,6 +48,6 @@ ScrollReveal({
   delay: 200
 })
 
-ScrollReveal().reveal('.home-conteudo, .heading, .campus h2, .sobre-conteudo', {origin: 'top'});
-ScrollReveal().reveal(' .cursos-conteudo,  .campus-box, .campus-conteudo img, .campus-conteudo h4', {origin: 'bottom'});
+ScrollReveal().reveal('.home-conteudo, .heading', {origin: 'top'});
+ScrollReveal().reveal(' .cursos-conteudo,  .campus-box', {origin: 'bottom'});
 ScrollReveal().reveal(' .sobre-img', {origin: 'right'});
