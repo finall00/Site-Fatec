@@ -58,7 +58,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 10rem 10rem 8rem;
+    padding: 4rem 10rem 4rem;
 }
 
 
@@ -96,7 +96,7 @@ section {
 
 .navbar a:hover,
 .navbar a.active {
-    color: 	var(--nav-hover);
+    color: var(--nav-hover);
 }
 
 #menu-icon {
@@ -200,7 +200,7 @@ span {
 }
 
 
-.home .btn{
+.home .btn {
     padding: 2rem 3.8rem;
     margin-top: 8rem;
 }
@@ -208,12 +208,12 @@ span {
 .home .btn:hover {
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
-  }
-  
-  .home .btn:active {
+}
+
+.home .btn:active {
     box-shadow: none;
     transform: translateY(0);
-  }
+}
 
 /*---- Sobre ---- */
 
@@ -301,9 +301,9 @@ span {
 
 .cursos-conteudo .btn:hover {
     box-shadow: 0 0 1rem var(--main-cor);
-  }
-  
-  
+}
+
+
 
 
 .cursos-box i {
@@ -504,12 +504,82 @@ footer .footer-conteudo span {
         margin-top: 4rem;
     }
 
-    .sobre-conteudo .btn {
-        margin-bottom: 14rem;
-    }
 
     .sobre-img img {
         width: 73vw;
+    }
+
+}
+
+@media (max-width: 1250px) {
+    .cursos-conteudo .cursos-box {
+        min-height: 81rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .sobre {
+        min-height: 81rem;
+        flex-direction: column-reverse;
+    }
+
+    .sobre img {
+        margin-top: 0;
+        width: 80vw;
+    }
+
+    .sobre-conteudo p {
+        text-align: center;
+    }
+
+    .sobre-conteudo .btn {
+        margin-bottom: 0rem;
+        margin-left: 36%;
+    }
+
+    .footer{
+        width: 150%;
+    }
+
+}
+
+
+@media (max-width: 490px) {
+    #menu-icon {
+        display: block;
+    }
+
+    section {
+        padding: 10rem 10rem 0rem;
+        margin-right: -20rem;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-cor);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: .1rem solid rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+
+
+    .cursos-conteudo .cursos-box {
+       max-height: 160rem;
+    }
+
+
+    .campus-conteudo {
+        flex-direction: column;
+    }
+
+    .sobre-conteudo .btn {
+      
+        margin-left: 23%;
     }
 
 }
